@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>	
+	
+	
+	<servlet>
+			<servlet-name>login</servlet-name>
+			<servlet-class>com.sms.servlet.LoginServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>login</servlet-name>
+			<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Manager -->
+	
+	<servlet>
+			<servlet-name>mgrViewProfile</servlet-name>
+			<servlet-class>com.sms.servlet.ManagerViewProfileServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>mgrViewProfile</servlet-name>
+			<url-pattern>/managerViewProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>mgrEditProfile</servlet-name>
+			<servlet-class>com.sms.servlet.ManagerEditProfileServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>mgrEditProfile</servlet-name>
+			<url-pattern>/managerEditProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>mgrUpdateProfile</servlet-name>
+			<servlet-class>com.sms.servlet.ManagerUpdateProfileServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>mgrUpdateProfile</servlet-name>
+			<url-pattern>/managerUpdateProfile</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+			<servlet-name>addSM</servlet-name>
+			<servlet-class>com.sms.servlet.AddStaffMemberServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>addSM</servlet-name>
+			<url-pattern>/addStaffMember</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+			<servlet-name>deleteSM</servlet-name>
+			<servlet-class>com.sms.servlet.DeleteStaffMemberServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>deleteSM</servlet-name>
+			<url-pattern>/deleteStaffMember</url-pattern>
+	</servlet-mapping>
+
+	 <servlet>
+			<servlet-name>viewSM</servlet-name>
+			<servlet-class>com.sms.servlet.ViewStaffMemberServlet</servlet-class>
+	</servlet>	
+	
+	<servlet-mapping>
+			<servlet-name>viewSM</servlet-name>
+			<url-pattern>/viewStaffMember</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+			<servlet-name>editSM</servlet-name>
+			<servlet-class>com.sms.servlet.EditStaffMemberServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>editSM</servlet-name>
+			<url-pattern>/editStaffMember</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+			<servlet-name>updateSM</servlet-name>
+			<servlet-class>com.sms.servlet.UpdateStaffMemberServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>updateSM</servlet-name>
+			<url-pattern>/updateStaffMember</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>searchSM</servlet-name>
+			<servlet-class>com.sms.servlet.SearchStaffMemberListServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>searchSM</servlet-name>
+			<url-pattern>/searchStaffMember</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+			<servlet-name>addMgr</servlet-name>
+			<servlet-class>com.sms.servlet.AddManagerServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>addMgr</servlet-name>
+			<url-pattern>/addManager</url-pattern>
+	</servlet-mapping>
+
+	 <servlet>
+			<servlet-name>deleteMgr</servlet-name>
+			<servlet-class>com.sms.servlet.DeleteManagerServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>deleteMgr</servlet-name>
+			<url-pattern>/deleteManager</url-pattern>
+	</servlet-mapping>
+
+	 <servlet>
+			<servlet-name>viewMgr</servlet-name>
+			<servlet-class>com.sms.servlet.ViewManagerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+			<servlet-name>viewMgr</servlet-name>
+			<url-pattern>/viewManager</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+			<servlet-name>editMgr</servlet-name>
+			<servlet-class>com.sms.servlet.EditManagerServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>editMgr</servlet-name>
+			<url-pattern>/editManager</url-pattern>
+	</servlet-mapping>	
+	
+	
+	 <servlet>
+			<servlet-name>updateMgr</servlet-name>
+			<servlet-class>com.sms.servlet.UpdateManagerServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>updateMgr</servlet-name>
+			<url-pattern>/updateManager</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>searchMgr</servlet-name>
+			<servlet-class>com.sms.servlet.SearchManagerListServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>searchMgr</servlet-name>
+			<url-pattern>/searchManager</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+			<servlet-name>mgrSearch</servlet-name>
+			<servlet-class>com.sms.servlet.ManagerSearchServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>mgrSearch</servlet-name>
+			<url-pattern>/managerSearch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>deleteCt</servlet-name>
+			<servlet-class>com.sms.servlet.DeleteContactServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>deleteCt</servlet-name>
+			<url-pattern>/deleteContact</url-pattern>
+	</servlet-mapping>	
+
+
+
+	<!-- Staff Member -->
+
+	<servlet>
+			<servlet-name>smViewProfile</servlet-name>
+			<servlet-class>com.sms.servlet.StaffMemberViewProfileServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>smViewProfile</servlet-name>
+			<url-pattern>/staffMemberViewProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>smEditProfile</servlet-name>
+			<servlet-class>com.sms.servlet.StaffMemberEditProfileServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>smEditProfile</servlet-name>
+			<url-pattern>/staffMemberEditProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>smUpdateProfile</servlet-name>
+			<servlet-class>com.sms.servlet.StaffMemberUpdateProfileServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>smUpdateProfile</servlet-name>
+			<url-pattern>/staffMemberUpdateProfile</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+			<servlet-name>smSearch</servlet-name>
+			<servlet-class>com.sms.servlet.StaffMemberSearchServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>smSearch</servlet-name>
+			<url-pattern>/staffMemberSearch</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Payment -->
+	
+	<servlet>
+			<servlet-name>addPay</servlet-name>
+			<servlet-class>com.sms.servlet.AddPaymentServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>addPay</servlet-name>
+			<url-pattern>/addPayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>deletePay</servlet-name>
+			<servlet-class>com.sms.servlet.DeletePaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>deletePay</servlet-name>
+			<url-pattern>/deletePayment</url-pattern>
+	</servlet-mapping>	
+		
+	 <servlet>
+			<servlet-name>viewPay</servlet-name>
+			<servlet-class>com.sms.servlet.ViewPaymentServlet</servlet-class>
+	</servlet>	
+
+	<servlet-mapping>
+			<servlet-name>viewPay</servlet-name>
+			<url-pattern>/viewPayment</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+			<servlet-name>editPay</servlet-name>
+			<servlet-class>com.sms.servlet.EditPaymentServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>editPay</servlet-name>
+			<url-pattern>/editPayment</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+			<servlet-name>updatePay</servlet-name>
+			<servlet-class>com.sms.servlet.UpdatePaymentServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>updatePay</servlet-name>
+			<url-pattern>/updatePayment</url-pattern>
+	</servlet-mapping>	
+
+
+
+	<!-- Feedback -->
+	
+	<servlet>
+			<servlet-name>addFbk</servlet-name>
+			<servlet-class>com.sms.servlet.AddFeedbackServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>addFbk</servlet-name>
+			<url-pattern>/addFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>deleteFbk</servlet-name>
+			<servlet-class>com.sms.servlet.DeleteFeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>deleteFbk</servlet-name>
+			<url-pattern>/deleteFeedback</url-pattern>
+	</servlet-mapping>	
+		
+	 <servlet>
+			<servlet-name>viewFbk</servlet-name>
+			<servlet-class>com.sms.servlet.ViewFeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>viewFbk</servlet-name>
+			<url-pattern>/viewFeedback</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+			<servlet-name>editFbk</servlet-name>
+			<servlet-class>com.sms.servlet.EditFeedbackServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>editFbk</servlet-name>
+			<url-pattern>/editFeedback</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+			<servlet-name>updateFbk</servlet-name>
+			<servlet-class>com.sms.servlet.UpdateFeedbackServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>updateFbk</servlet-name>
+			<url-pattern>/updateFeedback</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Leaves -->
+
+	<servlet>
+			<servlet-name>addLeave</servlet-name>
+			<servlet-class>com.sms.servlet.AddLeaveServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>addLeave</servlet-name>
+			<url-pattern>/addLeave</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+			<servlet-name>deleteLeave</servlet-name>
+			<servlet-class>com.sms.servlet.DeleteLeaveServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+			<servlet-name>deleteLeave</servlet-name>
+			<url-pattern>/deleteLeave</url-pattern>
+	</servlet-mapping>	
+		
+	 <servlet>
+			<servlet-name>viewLeave</servlet-name>
+			<servlet-class>com.sms.servlet.ViewLeaveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+			<servlet-name>viewLeave</servlet-name>
+			<url-pattern>/viewLeave</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+			<servlet-name>editLeave</servlet-name>
+			<servlet-class>com.sms.servlet.EditLeaveServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>editLeave</servlet-name>
+			<url-pattern>/editLeave</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+			<servlet-name>updateLeave</servlet-name>
+			<servlet-class>com.sms.servlet.UpdateLeaveServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>updateLeave</servlet-name>
+			<url-pattern>/updateLeave</url-pattern>
+	</servlet-mapping>
+
+	 <servlet>
+			<servlet-name>approveLeave</servlet-name>
+			<servlet-class>com.sms.servlet.ApproveLeaveServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>approveLeave</servlet-name>
+			<url-pattern>/approveLeave</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+			<servlet-name>rejectLeave</servlet-name>
+			<servlet-class>com.sms.servlet.RejectLeaveServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>rejectLeave</servlet-name>
+			<url-pattern>/rejectLeave</url-pattern>
+	</servlet-mapping>
+	
+	
+		
+	<!-- Contact -->
+	
+	<servlet>
+			<servlet-name>addContact</servlet-name>
+			<servlet-class>com.sms.servlet.AddContactServlet</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+			<servlet-name>addContact</servlet-name>
+			<url-pattern>/contactSubmit</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Error pages -->
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error404.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error500.jsp</location>
+	</error-page>
+	 
+
+</web-app>
